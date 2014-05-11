@@ -148,3 +148,42 @@ a:hover
 		margin-top:-90px;
 		text-align:center;
 	}
+
+/* responsive */
+@media (max-width: 768px) {
+	body {
+    overflow: visible;
+	}
+
+  #contentContainer, #carouselContainer, .carouselItem, .carouselItemInner {
+  	position: static;
+  	margin: 0;
+  	visibility: visible;
+  	width: auto;
+  	height: auto;
+  }
+
+  img.carouselItemInner {
+  	-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+  	width: 100%;
+  }
+
+  .carouselItem .carouselItemInner {
+  	border-bottom-width: 0;
+  }
+
+  .carouselItem:last-child .carouselItemInner {
+  	border-bottom-width: 10px;
+  }
+
+  header {
+  	position: static;
+  	margin-top: 0;
+  }
+
+  footer {
+    position: static;
+  }
+}
